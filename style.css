@@ -1,0 +1,132 @@
+.bar {
+  width: 50px;
+  height: 50px;
+  background-color: #6243b0;
+  transition: width 3s;
+  -webkit-transition: width 3s;
+}
+.bar:hover {
+  width: 250px;
+}
+.bar2 {
+  width: 50px;
+  height: 50px;
+  background: #13dfd2;
+  transition: width 3s;
+  transition-timing-function: cubic-bezier(0, 0, 1, 1);
+  -webkit-transition: width 3s;
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 1, 1);
+}
+.bar2:hover {
+  width: 250px;
+}
+div.empty-div {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  margin: 30px;
+  padding: 10px;
+  border: 1px solid black;
+}
+div.green-div {
+  padding: 50px;
+  position: absolute;
+  background-color: #8bc34a;
+  border: 1px solid white;
+  transform: rotate(15deg);
+  transform-origin: 25% 75%;
+  -webkit-transform: rotate(15deg);
+  -webkit-transform-origin: 25% 75%;
+}
+/* scale */
+div.first {
+  width: 200px;
+  height: 100px;
+  background-color: #2a561c;
+  transform: scale(0.7, 0.7);
+  -webkit-transform: scale(0.7, 0.7);
+  color: white;
+}
+div.second {
+  margin: 60px;
+  width: 200px;
+  height: 100px;
+  background-color: #8bc34a;
+  transform: scale(1.5, 1.5);
+  -webkit-transform: scale(1.5, 1.5);
+  color: white;
+}
+/* animation */
+/* .animation {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: colorchange;
+  animation-duration: 3s;
+  -webkit-animation-name: colorchange;
+  -webkit-animation-duration: 3s;
+}
+@keyframes colorchange {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: green;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+@-webkit-keyframes colorchange {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: green;
+  }
+  100% {
+    background-color: blue;
+  }
+} */
+div.expand {
+  animation-name: colorchange;
+  animation-duration: 5s;
+  height: 100px;
+  background-color: red;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-name: colorchange;
+}
+@keyframes colorchange {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 100px;
+  }
+}
+@-webkit-keyframes colorchange {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 100px;
+  }
+}
+div.empty-div2 {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: 30px;
+  padding: 10px;
+  border: 1px solid black;
+  perspective: 100px;
+  -webkit-perspective: 100px;
+}
+div.green-div2 {
+  padding: 60px;
+  position: absolute;
+  background-color: #8bc34a;
+  border: 1px solid white;
+  transform: rotateX(45deg);
+  -webkit-transform: rotateX(45deg);
+}
